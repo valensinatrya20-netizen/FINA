@@ -5,17 +5,16 @@
   </head>
   <body>
     <h1>Hai Cantik!</h1>
-    <img src="https://media.tenor.com/PzZCjLnRkUsAAAAj/peach-and-goma-hug.gif" />
+    <img src="https://media.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
     <h1>Maukah Kamu Menjadi Pacarku?</h1>
 
-    <button id="btn_mau" onclick="alert('I LOVE U')">Mau</button>
+    <button id="btn_mau" onclick="alert('I LOVE U 💖')">Mau</button>
     <button id="btn_gamau" onclick="gamau(this)" style="position: absolute;">Gamau</button>
 
     <script>
       function gamau(id) {
-        var mau = document.getElementById("btn_mau");
-        var i = Math.floor(Math.random() * 300) + 1;
-        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        var i = Math.floor(Math.random() * window.innerWidth - 100);
+        var j = Math.floor(Math.random() * window.innerHeight - 100);
         id.style.left = i + "px";
         id.style.top = j + "px";
       }
